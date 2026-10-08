@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Useless Site</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- A module runs after the document is parsed, so app.js can find the controls. -->
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">A small experiment</p>
+    <h1>Useless Site</h1>
+    <p>Something curious belongs here.</p>
+
+    <!-- This is only a placeholder interaction. Replace it with your first puzzle. -->
+    <section class="experiment" aria-label="A tiny experiment">
+      <div class="dot" data-testid="curious-dot" aria-hidden="true"></div>
+      <div class="controls">
+        <button id="poke" type="button">Poke it</button>
+        <button id="reset" type="button" class="secondary">Reset</button>
+      </div>
+      <!-- The live region announces the change without relying on color alone. -->
+      <p id="message" role="status" aria-live="polite">Nothing has happened. Yet.</p>
+    </section>
+  </main>
+</body>
+</html>
